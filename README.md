@@ -3,7 +3,8 @@ NodeJS, ExpressJS, MySQL, Multer file upload app template.
 
 ```
 .
-├── .env //Enviroment Variables
+├── .env // Enviroment Variables
+├── .eslintrc.js // Linter configs 
 ├── .gitignore
 ├── migrations 
 │   ├── 23032021192430-create-user.js
@@ -12,7 +13,7 @@ NodeJS, ExpressJS, MySQL, Multer file upload app template.
 ├── package-lock.json
 ├── README.md
 ├── sample.env // Sample Enviroment Variables
-├── .sequelizerc //Sequelize config
+├── .sequelizerc // Sequelize config
 ├── src
 │   ├── configs
 │   │   └── sequelize.js // Database config
@@ -59,6 +60,11 @@ npm run migrate
 ## Run Server
 ```bash
 npm start
+```
+
+## Lint
+```bash
+npm run lint
 ```
 
 ## User Story
