@@ -1,4 +1,4 @@
-# Node File Uploader
+# NodeJS File Uploader Template
 NodeJS, ExpressJS, MySQL, Multer file upload app template.
 
 ```
@@ -51,7 +51,7 @@ cp sample.env .env
 ```
 
 ## Migrate
-Create MySQL database then
+Create database then
 ```bash
 npm run migrate
 ```
@@ -120,3 +120,6 @@ Output:
 100  187k  100  187k    0     0  13.0M      0 --:--:-- --:--:-- --:--:-- 13.0M
 
 ```
+
+## LICENSE
+[GPL-3.0 License](LICENSE)
