@@ -35,8 +35,8 @@ NodeJS, ExpressJS, MySQL, Multer file upload app template.
 
 ## Clone
 ```bash
-git clone
-cd node-file-uploader
+git clone https://github.com/saracalihan/node-file-uploader-template.git
+cd node-file-uploader-template
 ```
 
 ## Install
