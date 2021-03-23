@@ -16,6 +16,5 @@ fs
 init_callbacks.forEach((initialize) => {
   initialize(models);
 });
-console.log(models);
-module.exports =  models;
 
+module.exports = models;

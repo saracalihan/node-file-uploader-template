@@ -68,7 +68,7 @@ npm start
 curl --header "Content-Type: application/json" --request POST  --data '{"username":"saracalihan","password":"123456"}' http://localhost:3000/authentications/register
 ```
 Output:
-```
+```json
 {
   "user":{
     "id":1,
@@ -85,7 +85,7 @@ Output:
 curl --header "Content-Type: application/json" --request POST  --data '{"username":"saracalihan","password":"123456"}' http://localhost:3000/authentications/login
 ```
 Output: 
-```
+```json
 {
   "user":{
     "id":1,
@@ -105,8 +105,19 @@ Output:
 curl --header "user_token: 1" --form file=@resmi.png http://localhost:3000/files/upload
 ```
 Output: 
-```
-http://localhost:3000/files/1616526652422-105337387-avatar.png
+```json
+{
+  "file":{
+    "id":8,
+    "user_id":"1",
+    "name":"resmi.png",
+    "path":"1616534157699-267009044-resmi.png",
+    "size":191611,
+    "updatedAt":"2021-03-23T21:15:57.704Z",
+    "createdAt":"2021-03-23T21:15:57.704Z"
+  },
+  "url":"http://localhost:3000/files/1616534157699-267009044-resmi.png"
+}
 ```
 
 ### Get File

@@ -13,8 +13,8 @@ const files = sequelize.define('files', {
   },
   size: {
     type: DataTypes.STRING,
-    allowNull: false
-  }
+    allowNull: false,
+  },
 },
 {
   timestamps: true,
@@ -30,10 +30,9 @@ const initialize = (models) => {
       allowNull: false,
     },
   });
-
-}
+};
 
 module.exports = {
   model: files,
-  initialize
-}
+  initialize,
+};

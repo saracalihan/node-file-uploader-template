@@ -11,10 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(router);
 
-app.get('/api', function (req, res) {
-  return res.status(200).send('OK');
-});
+app.get('/api', (req, res) => res.status(200).send('OK'));
 
-app.listen(PORT, function () {
+app.listen(PORT, () => {
   console.log(`Server is listening to http://localhost:${PORT}`);
 });

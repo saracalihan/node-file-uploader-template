@@ -1,16 +1,16 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../sequelize');
 
-const users = sequelize.define('users',{
+const users = sequelize.define('users', {
   username: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
   },
-  password:{
+  password: {
     type: DataTypes.STRING,
     allowNull: false,
-  }
+  },
 },
 {
   timestamps: true,
@@ -18,9 +18,9 @@ const users = sequelize.define('users',{
   underscored: true,
 });
 
-const initialize = (models) => {}
+const initialize = (models) => {};
 
 module.exports = {
   model: users,
-  initialize
-}
+  initialize,
+};
